@@ -8,9 +8,9 @@ def sumofArray(arr):
     return (sum)
 
 
-# arr1=[2,3,5]
-# res=sumofArray(arr1)
-# print(res)
+    arr1=[2,3,5]
+    res=sumofArray(arr1)
+    print(res)
 
 
 class PrimeTest(unittest.TestCase):

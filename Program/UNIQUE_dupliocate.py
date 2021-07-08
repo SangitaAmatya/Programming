@@ -1,18 +1,44 @@
+# Python program to check if two
+# to get unique values from list
+# using set
+
+# function to get unique values
 import unittest
-def UNIQUE_dupliocate  (list_value):
-    #inset the list to the set
-    list_set = set(list_value)
-    #convert the set to the list
-    unique_list = list(list_set)
-    for x in unique_list :
-     print(x)
+from collections import Counter
 
-    list1 = unique_list(list_value)
-    print("\nThe unique values of List")
-    UNIQUE_dupliocate (list1)
 
-    class PalindromeTest(unittest.TestCase):
-        def testcase1(self):
-            self.assertEqual(UNIQUE_dupliocate[2, 2, 3, 1, 4, 2])
-    #[1,1,2,4,3,4]
-    #[sangita,sangita,a,b,b]
+def unique (list1):
+
+    print ("the unique values from 1st list is")
+
+
+    # insert the list to the set
+    list_set = set (list1)
+    # convert the set to the list
+    unique_list = (list (list_set))
+    for x in unique_list:
+        #return (list_set)
+        print(x)
+
+list1l = [1,2,2,4,5,6,7,6,8]
+
+my_list = sorted (list1l)
+
+duplicates = []
+for i in my_list:
+    if my_list.count (i) > 1:
+        if i not in duplicates:
+            duplicates.append (i)
+
+            print(duplicates)
+
+print ("the duplicate values from 1st list is")
+unique (list1l)
+class TestBubbleSortVOneAlgorithm(unittest.TestCase):
+
+    def test_bubble_sort_with_positive_numbers(self):
+        list1l = [1, 2, 2, 4, 5, 6, 7, 6, 8]
+        self.assertEqual([1,2,4,5,6,7,8],unique( list1l))
+
+
+

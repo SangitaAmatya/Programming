@@ -14,6 +14,7 @@ def largest (arr, n):
         if arr [i] > max:
             max = arr [i]
             return max
+
 # Driver Code
 # arr = [10, 324, 45, 90, 9808]
 # n = len (arr)
@@ -21,5 +22,4 @@ def largest (arr, n):
 # print ("Largest in given array is", Ans)
 class LargestArrayInaArrayTest (unittest.TestCase):
     def testcase1 (self):
-        # ans = largest (arr, n)
         self.assertEqual (largest ([10, 324, 45, 90, 9808]), 9808)
