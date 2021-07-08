@@ -1,0 +1,11 @@
+
+string = input("enther the string ")
+
+string ="sssanngita"
+s = ''
+for st in string:
+    if s == '' or st!=s[len(s)-1]:
+     s = s + st
+print(s)
+
+
