@@ -6,6 +6,8 @@
 
 # Python code to reverse a string
 # using recursion
+import unittest
+
 
 def reverse(s):
     if len(s) == 0:
@@ -21,3 +23,7 @@ def RevesrseA_String(string):
         return True
     else:
         return False
+class PalindromeTest(unittest.TestCase):
+    def testcase1(self):
+        self.assertEqual(RevesrseA_String("this is my car"))
+
