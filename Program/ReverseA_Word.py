@@ -5,8 +5,6 @@ string = "This is my car"
 
 def RevesrseA_String (string):
     string = "This is my car"
-
-
 word_list = string.split ()
 reversed_list = word_list [:: -1]
 reversed_sentence = " ".join (reversed_list)

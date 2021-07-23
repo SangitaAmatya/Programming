@@ -27,3 +27,14 @@ class PalindromeTest(unittest.TestCase):
     def testcase1(self):
         self.assertEqual(RevesrseA_String("this is my car"))
 
+    def testcase1 (self):
+        expected = ["rac ym si siht"]
+        self.assertEqual (expected, RevesrseA_String ('this is my car'), True)
+
+
+    def testcase3(self):
+        expected=" rac ym si siht"
+        self.assertEqual(RevesrseA_String("this is my car"))
+
+    def testcase4(self):
+        self.assertEqual(RevesrseA_String([1,23,34,56]))

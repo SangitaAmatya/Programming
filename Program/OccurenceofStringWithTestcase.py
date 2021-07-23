@@ -15,19 +15,16 @@ def count_char (text):
                 count += 1
 
         text = text.replace (ch, '').strip ()
-        #print (ch + " - ", count)
-        res =[ch,count]
-        resl.append(res)
+        # print (ch + " - ", count)
+        res = [ch, count]
+        resl.append (res)
 
-    print (resl)
+    #print (resl)
     return resl
-
-count_char ('My strin gggg')
 
 
 class occurenceof_Stringf (unittest.TestCase):
     def testcase1 (self):
-        expected=[['M', 1], ['y', 1], ['s', 1], ['t', 1], ['r', 1], ['i', 1], ['n', 1], ['g', 4]]
-        self.assertEqual (expected,count_char ('My strin gggg'), True)
-        expected=[['M', 1], ['y', 1], ['s', 1], ['t', 1], ['r', 1], ['i', 1], ['n', 1], ['g', 4]]
+        expected = [['s', 1], ['a', 5]]
+        self.assertEqual (expected, count_char ('saaaaaa'), True)
 

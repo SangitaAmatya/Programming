@@ -1,13 +1,12 @@
 def removeDuplicate (str, n):
     # Used as index in the modified string
     index = 0
-
     # Traverse through all characters
     for i in range (0, n):
 
         # Check if str[i] is present before it
         for j in range (0, i + 1):
-            if (str [i] == str [j]):
+            if str [i] == str [j]:
                 break
 
         # If not present, then add it to
@@ -20,6 +19,6 @@ def removeDuplicate (str, n):
 
 
 # Driver code
-str = "geeksforgeeks"
+str = "mynameissangita"
 n = len (str)
 print (removeDuplicate (list (str), n))

@@ -9,5 +9,6 @@ for ch in string :
                 list1.append(ch)
                 print(list1)
                 output2=''.join(list1)
+
                 print("Original string :", string)
                 print ("After the removing the  string: ", output)
